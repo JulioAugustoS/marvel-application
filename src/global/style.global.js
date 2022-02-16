@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -17,4 +17,18 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-export { GlobalStyle };
+const Content = styled.div`
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 1200px) {
+    padding: 0 20px;
+  }
+`;
+
+export { GlobalStyle, Content };
