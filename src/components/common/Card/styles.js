@@ -33,9 +33,11 @@ export const Bottom = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 20px;
 
   p {
     font-size: 2.4rem;
     color: #fff;
+    text-align: center;
   }
 `;
